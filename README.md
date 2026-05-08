@@ -117,3 +117,72 @@ Meaning:
  - **20%** loss due to evaporation, splash loss, absorption, and leakage
 
 This value follows commonly accepted rainwater harvesting design standards.
+
+### 3️⃣ Daily Groundwater Recharge Potential
+
+$$
+\text{Daily Recharge (Litres/day)} =
+\frac{\text{Annual Harvested Water} \times 1000}{365}
+$$
+
+**📈 Sustainability Rating Logic**
+
+| Daily Recharge   | Sustainability Assessment          |
+| ---------------- | ---------------------------------- |
+| > 1500 L/day     | Excellent Sustainability Potential |
+| 700 – 1500 L/day | Moderate Sustainability            |
+| < 700 L/day      | Low Harvest Potential              |
+
+## 🧭 Application Workflow
+
+```mermaid
+flowchart TD
+    A[User Input] --> B[Select Location]
+    B --> C[Enter Rooftop Area]
+    C --> D[Rainfall Data Retrieval]
+    D --> E[Engineering Computation]
+    E --> F[Harvesting Potential Estimation]
+    F --> G[Professional Sustainability Report]
+```
+## 🌧️ High Scenario 1 (Chennai Location)
+
+### Input Page 
+
+This screen shows the user input configuration for Chennai, where parameters such as rooftop catchment area and rainfall data are provided to evaluate rainwater harvesting potential.
+
+<p align="center">
+ 
+![HIGH](Images/High_1.png)
+
+</p>
+
+### Output Page (Excellent Sustainability Potential)
+
+The assessment result indicates Excellent Sustainability Potential, showing high efficiency in rainwater harvesting and strong suitability for sustainable urban water management in this region.
+
+<p align="center">
+ 
+![HIGH](Images/High_2.png)
+
+</p>
+
+🌧️ Low Scenario 1 (Delhi Location)
+### Input Page 
+
+This screen represents the input setup for Delhi, where the system takes rooftop area, rainfall, and runoff coefficient to compute harvesting feasibility under local climatic conditions.
+
+<p align="center">
+ 
+![LOW](Images/Low_1.png)
+
+</p>
+
+### Output Page (Low Harvest Potential)
+
+The output highlights Low Harvest Potential, indicating limited rainwater harvesting efficiency due to regional rainfall characteristics and runoff conditions.
+
+<p align="center">
+ 
+![LOW](Images/Low_2.png)
+
+</p>
