@@ -111,7 +111,7 @@ $$
 Runoff Coefficient = 0.8
 $$
 
-Meaning:
+**Meaning:**
 
  - **80%** rainfall becomes collectible runoff
  - **20%** loss due to evaporation, splash loss, absorption, and leakage
@@ -125,7 +125,14 @@ $$
 \frac{\text{Annual Harvested Water} \times 1000}{365}
 $$
 
-**📈 Sustainability Rating Logic**
+**Explanation**
+ - Converts yearly harvested water into daily recharge capacity
+ - Multiplied by 1000 to convert cubic meters → litres
+ - Divided by 365 days
+
+**Output:** Litres of groundwater recharge per day
+
+## 📈 Sustainability Rating Logic
 
 | Daily Recharge   | Sustainability Assessment          |
 | ---------------- | ---------------------------------- |
@@ -144,6 +151,7 @@ flowchart TD
     E --> F[Harvesting Potential Estimation]
     F --> G[Professional Sustainability Report]
 ```
+
 ## 🌧️ High Scenario 1 (Chennai Location)
 
 ### Input Page 
@@ -166,7 +174,8 @@ The assessment result indicates Excellent Sustainability Potential, showing high
 
 </p>
 
-🌧️ Low Scenario 1 (Delhi Location)
+## 🌧️ Low Scenario 1 (Delhi Location)
+
 ### Input Page 
 
 This screen represents the input setup for Delhi, where the system takes rooftop area, rainfall, and runoff coefficient to compute harvesting feasibility under local climatic conditions.
@@ -186,3 +195,11 @@ The output highlights Low Harvest Potential, indicating limited rainwater harves
 ![LOW](Images/Low_2.png)
 
 </p>
+
+## 🌱 Impact
+
+This project demonstrates how software systems + environmental engineering principles can support sustainable urban water management through data-driven assessment tools.
+
+## 👩‍💻 Author
+
+Oviya Maheswari N
