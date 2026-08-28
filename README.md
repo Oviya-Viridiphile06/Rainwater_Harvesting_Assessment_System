@@ -76,8 +76,8 @@ Future versions will connect with real weather data sources.
  - Automatic location-based rainfall detection
 
 **Possible Integrations**
- - Central Ground Water Board (CGWB)
- - Indian Meteorological Department (IMD) data services
+ - **Central Ground Water Board (CGWB)**
+ - **Indian Meteorological Department (IMD)** data services
  - OpenWeather climate APIs
  - Satellite rainfall observation systems
 
